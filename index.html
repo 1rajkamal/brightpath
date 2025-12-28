@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>M.K Bright Path Classes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+<header class="navbar">
+  <div class="logo-wrapper">
+  <img src="logo.png" alt="M.K Bright Path Classes Logo" class="site-logo">
+  <div class="logo-text">
+    <h1 class="brand">
+      <span class="brand-main">M.K</span>
+      <span class="brand-highlight">Bright Path</span>
+      <span class="brand-sub">Classes</span>
+    </h1>
+    <span class="tagline">Your Journey to Educational Excellence</span>
+  </div>
+</div>
+  <nav class="nav-links">
+    <a href="#home" id="navHome">Home</a>
+    <a href="#classes" id="navClasses">Classes</a>
+    <a href="#about" id="navAbout">About</a>
+    <a href="#contact" id="navContact">Contact</a>
+  </nav>
+  <div class="toggles">
+    <button id="themeToggle">☀️</button>
+    <button id="langToggle">हिंदी</button>
+  </div>
+</header>
+<section class="hero" id="home">
+  <div class="hero-left">
+    <h2 id="heroTitle">Quality Education from LKG to Class 10</h2>
+    <p id="heroSub"></p>
+    <div class="hero-buttons">
+      <a href="#classes" class="btn primary" id="viewClasses">
+        View Classes
+      </a>
+      <a href="https://wa.me/917360096031" target="_blank" class="btn whatsapp">
+        WhatsApp Enquiry
+      </a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="student.png" alt="Students" />
+  </div>
+</section>
+<section class="offered" id="classes">
+  <h2 id="classesTitle">Classes</h2>
+  <p id="classesSub">Select class to view subjects & fees</p>
+  <div class="class-buttons">
+    <button onclick="showClass('lkg5')">LKG – Class 5</button>
+    <button onclick="showClass('6to8')">Class 6 – 8</button>
+    <button onclick="showClass('9to10')">Class 9 – 10</button>
+  </div>
+  <div class="result-box">
+    <div class="column">
+      <h3 id="subjectsTitle">Subjects</h3>
+      <div id="subjects"></div>
+    </div>
+    <div class="column">
+      <h3 id="feesTitle">Fees</h3>
+      <div id="fees"></div>
+    </div>
+  </div>
+  <!-- VIDEO BELOW SUBJECTS & FEES -->
+<div class="classes-video">
+  <video autoplay muted loop playsinline>
+    <source src="classroom.mp4" type="video/mp4">
+  </video>
+</div>
+
+</section>
+<section class="about" id="about">
+  <h2 id="aboutTitle">About M.K Bright Path Classes</h2>
+<div class="teacher-profile">
+  <img src="teacher.png" alt="Manish Kumar" />
+  <h4>Expert Teacher</h4>
+  <p>Manish Kumar</p>
+</div>
+  <p id="aboutIntro">
+    M.K Bright Path Classes is committed to providing high-quality education
+    for students from LKG to Class 10. Our focus is not just syllabus
+    completion, but building strong fundamentals and confidence in students.
+  </p>
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>🎯 Our Mission</h3>
+      <p>
+        To create a strong academic foundation for every student through
+        concept-based teaching and regular guidance.
+      </p>
+    </div>
+    <div class="about-card">
+      <h3>📘 Our Teaching Approach</h3>
+      <p>
+        We teach in Hindi or English based on the student’s comfort.
+        Special attention is given to weak areas, revision, and exam
+        preparation.
+      </p>
+    </div>
+    <div class="about-card">
+      <h3>👨‍🏫 About the Teacher</h3>
+      <p>
+        Qualified teacher with <strong>12th & B.Ed</strong>,
+        experienced in handling students of different learning levels
+        with patience and care.
+      </p>
+    </div>
+    <div class="about-card">
+      <h3>⭐ Why Choose Us</h3>
+      <p>
+        ✔ Home Tuition Available<br>
+        ✔ Free Demo Classes<br>
+        ✔ Weekly Tests & Notes<br>
+        ✔ Personal Guidance
+      </p>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>We’re happy to guide you for your child’s bright future</p>
+  <div class="contact-cards">
+    <a href="tel:7360096031" class="contact-card">
+      <h3>📞 Call Us</h3>
+      <p>7360096031</p>
+    </a>
+    <a href="https://wa.me/917360096031" target="_blank" class="contact-card">
+      <h3>💬 WhatsApp</h3>
+      <p>Instant Reply</p>
+    </a>
+    <div class="contact-card">
+      <h3>📍 Location</h3>
+      <p>Bihar</p>
+    </div>
+    <div class="contact-card">
+      <h3>⏰ Timings</h3>
+      <p>9:00 AM – 10:00 PM</p>
+    </div>
+  </div>
+  <div class="enquiry-box">
+    <h3>Student Enquiry</h3>
+    <input type="text" id="enqName" placeholder="Student Name">
+    <input type="text" id="enqClass" placeholder="Class (eg: 6)">
+    <input type="text" id="enqPhone" placeholder="Parent Phone">
+    <button onclick="sendEnquiry()" class="btn whatsapp">
+      Send Enquiry on WhatsApp
+    </button>
+  </div>
+</section>
+<footer class="footer">
+  <p>© 2025 M.K Bright Path Classes. All Rights Reserved.</p>
+  <p>
+    Made with ❤️ by
+    <a href="https://www.instagram.com/ra.j_kamal?igsh=bjh5ZmIyZmZsc3k2" target="_blank">
+      Rajkamal
+    </a>
+  </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
