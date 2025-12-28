@@ -398,3 +398,18 @@ body.light .brand-sub {
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
+.map-section {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.map-section iframe {
+  width: 95%;
+  max-width: 500px;
+  height: 280px;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
